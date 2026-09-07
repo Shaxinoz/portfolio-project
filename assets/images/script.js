@@ -32,3 +32,8 @@ if (textarea && span) {
     span.textContent = textarea.value.length;
   });
 }
+
+
+
+
+
