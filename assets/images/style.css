@@ -9,10 +9,37 @@ body {
   color: #ffffff;
   line-height: 1.6;
 }
+
+@media (max-width: 1200px) {
+  body {
+    padding: 0 20px;
+  }
+}
+
 header {
   width: 100%;
   padding: 20px 10%;
   background-color: #161b22;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    nav a {
+        font-size: 18px;
+    }
+    #scrollTopBtn {
+        bottom: 15px;
+        right: 15px;
+        padding: 8px 12px;
+    }
 }
 nav {
   display: flex;
@@ -44,6 +71,16 @@ nav a:hover::after {
 }
 nav a:focus-visible::after {
   width: 100%;
+}
+
+@media (max-widht: 1024px) {
+  nav a {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  .interests-list {
+    gap: 10px;
+  }
 }
 
 nav ul {
@@ -112,6 +149,13 @@ nav ul li a.active {
   font-size: 48px;
   color: #58a6ff;
   margin-bottom: 20px;
+}
+
+@media (min-width: 1201px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .buttons {
@@ -317,6 +361,27 @@ footer {
   box-shadow:
     0 0 15px rgba(57, 255, 20, 0.3),
     0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  nav a {
+    font-size: 18px;
+  }
+  #scrollTopBtn {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 12px;
+  }
 }
 
 a:focus-visible,
