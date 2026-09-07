@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #0d1117;
+  color: #ffffff;
+  line-height: 1.6;
+}
+header {
+  width: 100%;
+  padding: 20px 10%;
+  background-color: #161b22;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav a {
+    position: relative;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0px;
+  background-color: #58a6ff;
+  transition: width 0.3s ease;
+}
+nav a:hover::after {
+    width: 100%;
+}
+nav a:focus-visible::after {
+    width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #8b949e;
+  text-decoration: none;
+  font-size: 16px;
+  padding-bottom: 5px;
+  transition: 0.3s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #58a6ff;
+}
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.hero h1 span {
+  color: #58a6ff;
+}
+.hero p {
+  font-size: 20px;
+  color: #8b949e;
+  margin-bottom: 30px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #238636;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #2ea043;
+}
+.counter-box {
+  background-color: #161b22;
+  max-width: 400px;
+  margin: 0 auto 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #30363d;
+}
+
+.counter-box h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+#count {
+  font-size: 48px;
+  color: #58a6ff;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 10px 15px;
+  background-color: #21262d;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #30363d;
+  color: #ffffff;
+}
+
+.projects {
+  padding: 50px 10%;
+  text-align: center;
+}
+.projects h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  background-color: #161b22;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  text-align: left;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #58a6ff;
+}
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.card p {
+  color: #8b949e;
+  margin-bottom: 15px;
+}
+.card a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+  border-top: 1px solid #30363d;
+  color: #8b949e;
+}
+.socials {
+  margin-top: 10px;
+}
+.socials a {
+  color: #58a6ff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.about-me {
+  padding: 50px 10%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.skills ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+.skills li {
+  background-color: #21262d;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #30363d;
+}
+.contact-section {
+  padding: 50px 10%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.form-group {
+  display: flex;
+  gap: 15px;
+}
+.form-group input {
+  flex: 1;
+  width: 100%;
+}
+
+#contact-form input,
+#contact-form textarea {
+  height: 45px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+#contact-form textarea {
+  width: 100%;
+  padding-top: 12px;
+  resize: none;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #58a6ff;
+}
+#contact-form button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #238636;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#contact-form button:hover {
+  background-color: #2ea043;
+}
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.skill-item {
+  margin-bottom: 15px;
+}
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+}
+.progress-bar {
+  height: 10px;
+  background-color: #21262d;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  background-color: #238636;
+}
+#char-input {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: #000000;
+}
+
+.interests ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+.interests li {
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: #343d4a;
+  border: 1px solid #292e34;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.bio-text {
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid rgba(137, 72, 110, 0.5);
+  border-radius: 12px;
+  background-color: #0d1117;
+  box-shadow:
+    0 0 15px rgba(57, 255, 20, 0.3),
+    0 4px 10px rgba(0, 0, 0, 0.7);
+}
