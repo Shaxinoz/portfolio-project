@@ -22,3 +22,5 @@ Ushbu Loyiha mening shaxsiy portfolioyim bo'lib, unda men haqimdagi ma'lumotlar,
   * `style.css` — Asosiy CSS stillari va media queries
   * `script.js` — JavaScript mantiqiy kodlari
   * `README.md` — Loyiha haqida hujjatlashtirish
+
+  👉 [Portfolioni Ko'rish](https://github.com/Shaxinoz/portfolio-project.git)
