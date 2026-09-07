@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Portfolio</a>
+        <ul>
+          <li><a href="index.html" class="active">Asosiy</a></li>
+          <li><a href="about.html">Men haqimda</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Salom, men <span>Dasturchiman</span></h1>
+        <p>Backend Dasturchi</p>
+        <a href="contact.html" class="btn">Bo'g'lanish</a>
+      </section>
+
+      <section class="counter-box">
+        <h2>Mini Sanagich</h2>
+        <h1 id="count">0</h1>
+        <div class="buttons">
+          <button id="minus">- Kamaytirish</button>
+          <button id="reset">Reset</button>
+          <button id="plus">+ Oshirish</button>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h2>Mening Loyihalarim</h2>
+        <div class="project-grid">
+          <div class="card">
+            <img
+              src="https://picsum.photos/400/220?random=1"
+              alt="Loyiha 1"
+              class="card-img"
+            />
+            <h3>Loyiha 1</h3>
+            <p>Internet do'kon uchun yaratilgan zamonaviy veb-sayt.</p>
+            <a href="#">Batafsil →</a>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://picsum.photos/400/220?random=2"
+              alt="Loyiha 2"
+              class="card-img"
+            />
+            <h3>Loyiha 2</h3>
+            <p>Shaxsiy blog va yangiliklar platformasi.</p>
+            <a href="#">Batafsil →</a>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://picsum.photos/400/220?random=3"
+              alt="Loyiha 3"
+              class="card-img"
+            />
+            <h3>Loyiha 3</h3>
+            <p>Ob-havo ma'lumotlarini ko'rsatuvchi interaktiv ilova.</p>
+            <a href="#">Batafsil →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Portfolio. Barcha huquqlar himoyalangan.</p>
+      <div class="socials">
+        <a href="#">Telegram</a>
+        <a href="#">GitHub</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
