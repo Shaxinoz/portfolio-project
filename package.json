@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "Ushbu Loyiha mening shaxsiy portfolioyim bo'lib, unda men haqimdagi ma'lumotlar, bilimlarim va qiziqishlarim jamlangan!",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaxinoz/portfolio-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shaxinoz/portfolio-project/issues"
+  },
+  "homepage": "https://github.com/shaxinoz/portfolio-project#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.10.0",
+    "globals": "^17.12.0",
+    "vite": "^8.2.2"
+  }
+}
